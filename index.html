@@ -489,7 +489,7 @@
     <p class="hero-subtitle">La gran fiesta de Carolina</p>
 
     <div class="hero-details">
-      <div class="hero-detail-chip">📅 <span>Sábado 28 de marzo, 2025</span></div>
+      <div class="hero-detail-chip">📅 <span>Sábado 28 de marzo, 2026</span></div>
       <div class="hero-detail-chip">⏰ <span>3:00 PM</span></div>
       <div class="hero-detail-chip">📍 <span>C. Papantla 2442, Col. Margaritas, Cd. Juárez</span></div>
       <div class="hero-detail-chip">👢 <span>Dress code: Vaquero / Cowgirl</span></div>
@@ -630,14 +630,14 @@
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-year">2025 — 18 años 🌟</div>
+        <div class="timeline-year">2026 — 18 años 🌟</div>
         <div class="timeline-card">
           <div class="timeline-photo">
-            <img src="assets/fotos-carolina/carolina18.jpg" alt="Carolina 18 años" 
+            <img src="carolina.jpg" alt="Carolina 18 años" 
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
             <div class="timeline-photo-placeholder" style="display:none">
               <div class="photo-icon">👑</div>
-              <p>¡La foto de los 18!<br><small>assets/fotos-carolina/carolina18.jpg</small></p>
+              <p>¡La foto de los 18!<br><small>carolina.jpg</small></p>
             </div>
           </div>
           <div class="timeline-info">
@@ -703,11 +703,11 @@
         que guarden tu corazón para siempre.
       </p>
       <p>
-        El mundo es tuyo, cowgirl. 🤠✨
+        El mundo es tuyo, futura ingeniera. 🤠✨
       </p>
       <span class="stars-deco">✦ ✦ ✦</span>
       <div class="mensaje-firma">Carolina</div>
-      <p style="font-size:13px; color:var(--mid); margin-top:8px; font-style:italic;">18 años · 28 de marzo, 2025</p>
+      <p style="font-size:13px; color:var(--mid); margin-top:8px; font-style:italic;">18 años · 28 de marzo, 2026</p>
     </div>
   </div>
 </section>
@@ -715,7 +715,7 @@
 <!-- FOOTER -->
 <footer>
   <p><strong>Rodeo Night</strong> — Fiesta de Cumpleaños de Carolina</p>
-  <p style="margin-top:8px;">C. Papantla 2442, Col. Margaritas · Ciudad Juárez, Chih. · 28 marzo 2025 · 3:00 PM</p>
+  <p style="margin-top:8px;">C. Papantla 2442, Col. Margaritas · Ciudad Juárez, Chih. · 28 marzo 2026 · 3:00 PM</p>
   <p style="margin-top:16px; font-size:11px; color:var(--mid);">Hecho con 🤠 y mucho amor</p>
 </footer>
 
@@ -744,7 +744,7 @@ function toggleMenu(){
 
 // ── COUNTDOWN ──
 function updateCountdown(){
-  const target = new Date('2025-03-28T15:00:00');
+  const target = new Date('2026-03-28T15:00:00');
   const now = new Date();
   const diff = target - now;
   if(diff <= 0){
@@ -773,8 +773,8 @@ document.querySelectorAll('.timeline-item').forEach(el=>observer.observe(el));
 // ── CLOUDINARY UPLOAD ──
 // ⚠️ REEMPLAZA 'TU_CLOUD_NAME' con tu Cloud Name de Cloudinary
 // ⚠️ REEMPLAZA 'carolina_fotos' con el nombre de tu Upload Preset
-const CLOUD_NAME = 'dptxerbso';      // ← ya está listo
-const UPLOAD_PRESET = 'carolina_fotos'; // ← igual
+const CLOUD_NAME = 'dptxerbso';
+const UPLOAD_PRESET = 'carolina_fotos';
 
 function openUploadWidget(e){
   if(e) e.stopPropagation();
